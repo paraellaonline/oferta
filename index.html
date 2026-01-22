@@ -28,7 +28,7 @@
         }
 
         header {
-            background: linear-gradient(135deg, #f8c8dc 0%, #e75480 100%);
+           background: #232F3E;
             color: white;
             padding: 1px 0;
             text-align: center;
@@ -70,7 +70,7 @@
             left: 10px;
             width: 100px;
             height: 2px;
-            background: linear-gradient(135deg, #f8c8dc 0%, #e75480 100%);
+            background: #232F3E;
         }
 
         /* CARRITO FLOTANTE - MEJORADO */
@@ -101,7 +101,7 @@
             border-radius: 0px;
             position: relative;
             overflow: visible;
-            background: linear-gradient(135deg, #f8c8dc 0%, #e75480 100%);
+            background: #232F3E;
             box-shadow:
                 0 15px 35px rgba(75, 108, 183, 0.4),
                 0 5px 15px rgba(0, 0, 0, 0.1),
@@ -178,8 +178,8 @@
             position: absolute;
             top: -8px;
             right: -8px;
-            background: #6e6e6f;
-            color: white;
+            background: #232F3E;
+            color: rgb(216, 130, 8);
             font-weight: bold;
             font-size: 0.85rem;
             width: 30px;
@@ -191,7 +191,7 @@
             animation: countBounce 0.5s ease-out;
             border: 3px solid white;
             z-index: 3;
-            box-shadow: 0 3px 8px rgba(255, 71, 87, 0.4);
+            box-shadow: #232F3E;
             min-width: 30px;
             padding: 0 2px;
             overflow: hidden;
@@ -286,7 +286,7 @@
 
         /* ENCABEZADO DEL MODAL CON LOS MISMOS COLORES DEL HEADER */
         .modal-header {
-            background: linear-gradient(135deg, #f8c8dc 0%, #e75480 100%);
+            background: #232F3E;
             color: white;
             padding: 20px;
             display: flex;
@@ -392,7 +392,9 @@
 
         /* Botón de enviar pedido CON ICONO GRANDE - FIJO VISIBLE */
         .modal-footer .send-order-btn {
-            background: linear-gradient(135deg, #f8c8dc 0%, #e75480 100%);
+            background: rgb(5, 174, 5);
+color: white;
+font-weight: bold;
             color: white;
             border: none;
             padding: 18px 35px;
@@ -451,16 +453,17 @@
             padding: 10px 20px;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(223, 114, 242, 0.1);
-            border: 2px solid #ca7ba3;
+         
+           
         }
 
         .tab-nav-btn {
             width: 40px;
             height: 40px;
             border-radius: 10%;
-            background: linear-gradient(135deg, #f8c8dc 0%, #e75480 100%);
-            color: white;
-            border: none;
+            /*background: linear-gradient(135deg, #f8c8dc 0%, #e75480 100%);*/
+            color: #232F3E;
+            border: 1px solid #777f88;
             cursor: pointer;
             display: flex;
             align-items: center;
@@ -487,8 +490,8 @@
             height: 40px;
             border-radius: 10%;
             background: white;
-            color: #333;
-            border: 2px solid #9b999a;
+            color: #232F3E;
+             border: 1px solid #777f88;
             cursor: pointer;
             display: flex;
             align-items: center;
@@ -505,11 +508,11 @@
         }
 
         .tab-number.active {
-            background: linear-gradient(135deg, #a09f9f 0%, #b0afaf 100%);
+            background: #2e3e23;
             color: white;
-            border-color: #9d9b9b;
+            border-color: #232F3E;
             transform: scale(1.1);
-            box-shadow: 0 4px 10px rgba(231, 84, 128, 0.4);
+            box-shadow: #232F3E
         }
 
         .tab-content {
@@ -554,7 +557,7 @@
             display: flex;
             flex-direction: column;
             height: 100%;
-            border: 2px solid #d8dbe4;
+            border: 2px solid #b6babe;
         }
 
         .product-card:hover {
@@ -807,16 +810,16 @@
         }
 
         .size-option.selected {
-            background: #6e6e6f;
+            background: #232F3E;
             color: white;
-            border-color: #6e6e6f;
+            border-color: #232F3E;
             box-shadow: 0 2px 5px rgba(75, 108, 183, 0.3);
         }
 
         /*Boton agregar al carrito*/
         .add-to-cart-btn {
-            background: linear-gradient(135deg, #f8c8dc 0%, #e75480 100%);
-            color: white;
+            background: linear-gradient(135deg, #FFD814 0%, #F2A300 100%);
+            color: rgb(12, 12, 12);
             border: none;
             padding: 12px 20px;
             border-radius: 8px;
@@ -828,14 +831,11 @@
             align-items: center;
             justify-content: center;
             gap: 10px;
-            margin-top: auto;
             width: 100%;
-            margin-left: auto;
-            margin-right: auto;
         }
 
         .add-to-cart-btn:hover {
-            background: linear-gradient(135deg, #f8c8dc 0%, #e75480 100%);
+           background: linear-gradient(135deg, #FFD814 0%, #F2A300 100%);
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
         }
@@ -845,6 +845,45 @@
             cursor: not-allowed;
             transform: none;
             box-shadow: none;
+        }
+
+        /* Botón comprar ahora */
+        .buy-now-btn {
+            background: linear-gradient(135deg, #FF8F00 0%, #FF6F00 100%);
+            color: rgb(14, 13, 13);
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+        }
+
+        .buy-now-btn:hover {
+            background: linear-gradient(135deg, #5a5a5b 0%, #3a3a3b 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .buy-now-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        /* Contenedor para los botones */
+        .product-buttons-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: auto;
         }
 
         /* Sección de envío gratis y pago al recibir EN DOS CUADROS EN LÍNEA */
@@ -869,8 +908,8 @@
         }
 
         .shipping-box {
-            background: linear-gradient(135deg, #f8c8dc 0%, #e75480 100%);
-            color: white !important;
+            background: #232F3E;
+            color: white;
             font-weight: 800 !important;
             box-shadow: 0 6px 20px rgba(30, 58, 138, 0.3) !important;
             border-radius: 16px !important;
@@ -878,8 +917,8 @@
         }
 
         .payment-box {
-            background: linear-gradient(135deg, #f8c8dc 0%, #e75480 100%);
-            color: white !important;
+            background: #232F3E;
+            color: white;
             font-weight: 800 !important;
             box-shadow: 0 6px 20px rgba(30, 58, 138, 0.3) !important;
             border-radius: 16px !important;
@@ -971,7 +1010,7 @@
             transform: translateY(-50%);
             width: 60px;
             height: 60px;
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(155, 13, 13, 0.2);
             border: 2px solid white;
             border-radius: 50%;
             color: white;
@@ -1069,7 +1108,208 @@
             border: 2px solid white;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         }
+/* MODAL DE OFERTA ESPECIAL */
+.offer-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.95);*/
+    z-index: 20000;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
 
+.offer-modal.active {
+    display: flex;
+    opacity: 1;
+}
+
+.offer-content {
+    background: #232F3E;
+    width: 75%;
+    max-width: 600px;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+    animation: offerSlideIn 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    position: relative;
+    border: 5px solid white;
+}
+
+@keyframes offerSlideIn {
+    from {
+        transform: translateY(-100px) scale(0.7);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+.offer-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    background: #232F3E;
+    border: 2px solid white;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    z-index: 2002;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.offer-close-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: rotate(90deg) scale(1.1);
+}
+
+.offer-header {
+    padding: 30px 20px 10px;
+    text-align: center;
+    /*background: rgba(255, 255, 255, 0.15);*/
+}
+
+.offer-header h2 {
+    color: white;
+    font-size: 3.5rem;
+    margin: 0;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    font-family: 'Brush Script MT', cursive;
+}
+
+.offer-header .offer-subtitle {
+    color: rgb(4, 4, 4);
+    font-size: 1.3rem;
+    margin-top: 5px;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+.offer-body {
+    padding: 20px 30px 30px;
+}
+
+/* ESTILOS MODIFICADOS PARA LAS CAJAS CON BORDES BLANCOS */
+.offer-item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 15px;
+    border: 3px solid white; /* BORDE BLANCO COMPLETO */
+    background: rgba(255, 255, 255, 0.1); /* Fondo sutil para mejor contraste */
+    animation: itemFadeIn 0.5s ease forwards;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.3s ease;
+}
+
+/* Eliminamos el borde izquierdo específico ya que ahora tenemos borde completo */
+.offer-item {
+    border-left: 3px solid white; /* Mantenemos consistencia */
+}
+
+.offer-item:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.offer-item:nth-child(1) {
+    animation-delay: 0.2s;
+    border-color: white; /* Borde blanco para primera caja */
+}
+
+.offer-item:nth-child(2) {
+    animation-delay: 0.4s;
+    border-color: white; /* Borde blanco para segunda caja */
+}
+
+.offer-item:nth-child(3) {
+    animation-delay: 0.6s;
+    border-color: white; /* Borde blanco para tercera caja */
+}
+
+@keyframes itemFadeIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.offer-icon {
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid white; /* Borde adicional al icono */
+}
+
+.offer-icon i {
+    font-size: 1.8rem;
+    color: #232F3E;
+}
+
+.offer-text {
+    flex: 1;
+}
+
+.offer-text h3 {
+    color: rgb(241, 239, 237);
+    font-size: 2.6rem;
+    margin: 0 0 8px 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.offer-text p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+.offer-footer {
+    padding: 20px;
+    text-align: center;
+    background: #232F3E;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.offer-timer {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.offer-timer i {
+    color: white;
+    font-size: 1.4rem;
+}
+        
         /* Responsive */
         @media (max-width: 1024px) {
             .products-grid {
@@ -1105,6 +1345,14 @@
 
             .page-title {
                 font-size: 2.5rem;
+            }
+
+            .offer-header h2 {
+                font-size: 2.2rem;
+            }
+
+            .offer-text h3 {
+                font-size: 1.4rem;
             }
         }
 
@@ -1239,6 +1487,27 @@
             .modal-footer .send-order-btn i {
                 font-size: 1.6rem;
             }
+
+            .offer-content {
+                max-width: 90%;
+            }
+
+            .offer-header h2 {
+                font-size: 1.9rem;
+            }
+
+            .offer-text h3 {
+                font-size: 1.3rem;
+            }
+
+            .offer-icon {
+                width: 50px;
+                height: 50px;
+            }
+
+            .offer-icon i {
+                font-size: 1.5rem;
+            }
         }
 
         @media (max-width: 640px) {
@@ -1289,6 +1558,29 @@
                 width: 32px;
                 height: 32px;
                 font-size: 0.9rem;
+            }
+
+            .offer-item {
+                flex-direction: column;
+                text-align: center;
+                padding: 15px;
+            }
+
+            .offer-icon {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+
+            .offer-header h2 {
+                font-size: 1.7rem;
+            }
+
+            .offer-text h3 {
+                font-size: 1.2rem;
+            }
+
+            .offer-text p {
+                font-size: 1rem;
             }
         }
 
@@ -1443,6 +1735,49 @@
             .modal-footer .send-order-btn i {
                 font-size: 1.4rem;
             }
+
+            .offer-content {
+                max-width: 95%;
+                border-radius: 15px;
+            }
+
+            .offer-header {
+                padding: 20px 15px 5px;
+            }
+
+            .offer-header h2 {
+                font-size: 1.5rem;
+            }
+
+            .offer-header .offer-subtitle {
+                font-size: 1rem;
+            }
+
+            .offer-body {
+                padding: 15px 20px 20px;
+            }
+
+            .offer-item {
+                padding: 12px;
+                margin: 15px 0;
+            }
+
+            .offer-icon {
+                width: 45px;
+                height: 45px;
+            }
+
+            .offer-icon i {
+                font-size: 1.2rem;
+            }
+
+            .offer-text h3 {
+                font-size: 1.1rem;
+            }
+
+            .offer-text p {
+                font-size: 0.9rem;
+            }
         }
 
         @media (max-width: 380px) {
@@ -1506,6 +1841,14 @@
                 height: 28px;
                 font-size: 0.8rem;
             }
+
+            .offer-header h2 {
+                font-size: 1.3rem;
+            }
+
+            .offer-text h3 {
+                font-size: 1rem;
+            }
         }
     </style>
     <!-- Meta Pixel Code -->
@@ -1528,6 +1871,60 @@ src="https://www.facebook.com/tr?id=761584890348008&ev=PageView&noscript=1"
 </head>
 
 <body>
+    <!-- Modal de oferta especial -->
+    <div class="offer-modal" id="offerModal">
+        <div class="offer-content">
+            <button class="offer-close-btn" id="offerCloseBtn">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="offer-header">
+                <h2>OFERTA</h2>
+              
+            </div>
+            
+            <div class="offer-body">
+                <div class="offer-item">
+                    <div class="offer-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <div class="offer-text">
+                        <h3>Pagas al Recibir</h3>
+                        
+                    </div>
+                </div>
+                
+                <div class="offer-item">
+                    <div class="offer-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <div class="offer-text">
+                        <h3>Domicilio Gratis</h3>
+                       
+                    </div>
+                </div>
+                
+                <div class="offer-item">
+                    <div class="offer-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <div class="offer-text">
+                        <h3>Segunda Unidad a Mitad de Precio</h3>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="offer-footer">
+                <div class="offer-timer">
+                    <i class="fas fa-clock"></i>
+                    <span>Se cierra en<span id="offerTimer">5</span> segundos</span> 
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
     <!-- Carrito flotante - MEJORADO -->
     <div class="floating-cart" id="floatingCart">
         <div class="cart-rectangle">
@@ -2173,6 +2570,139 @@ src="https://www.facebook.com/tr?id=761584890348008&ev=PageView&noscript=1"
         const colorSwatch = document.getElementById('color-swatch');
         const colorName = document.getElementById('color-name');
 
+        // Elementos del modal de oferta
+        const offerModal = document.getElementById("offerModal");
+        const offerCloseBtn = document.getElementById("offerCloseBtn");
+        const offerTimer = document.getElementById("offerTimer");
+
+        // Variable para el temporizador de oferta
+        let offerCountdown;
+        let offerTimeout;
+
+        // Función para calcular el precio con descuento según la oferta
+        function calculateDiscountedPrice(unitPrice, totalItems) {
+            if (totalItems <= 1) {
+                return unitPrice;
+            }
+            
+            // Sistema de descuento:
+            // 2 pares: 2do par al 50% de descuento
+            // 3 pares: 2 pares completos + 1 al 50%
+            // 4 pares: 2 pares completos + 2 al 50%
+            
+            let fullPriceItems = Math.ceil(totalItems / 2);
+            let discountedItems = Math.floor(totalItems / 2);
+            
+            return (fullPriceItems * unitPrice) + (discountedItems * (unitPrice * 0.5));
+        }
+
+        // Función para calcular el total del carrito con descuentos
+        // Función para calcular el total del carrito con descuentos
+function calculateCartTotal() {
+    if (cart.length === 0) return 0;
+    
+    // Ordenar productos por precio (de mayor a menor) para dar mejor descuento al cliente
+    const sortedItems = [...cart].sort((a, b) => b.price - a.price);
+    
+    // Contar el total de unidades
+    let totalQuantity = 0;
+    sortedItems.forEach(item => {
+        totalQuantity += item.quantity;
+    });
+    
+    // Calcular cuántos productos completos y cuántos con descuento
+    const fullPriceCount = Math.ceil(totalQuantity / 2);
+    const discountedCount = Math.floor(totalQuantity / 2);
+    
+    let fullPriceSum = 0;
+    let discountedSum = 0;
+    let remainingFullPrice = fullPriceCount;
+    let remainingDiscounted = discountedCount;
+    
+    // Asignar productos completos primero (los más caros)
+    for (let item of sortedItems) {
+        for (let i = 0; i < item.quantity; i++) {
+            if (remainingFullPrice > 0) {
+                fullPriceSum += item.price;
+                remainingFullPrice--;
+            } else if (remainingDiscounted > 0) {
+                discountedSum += item.price * 0.5; // 50% descuento
+                remainingDiscounted--;
+            }
+        }
+    }
+    
+    return fullPriceSum + discountedSum;
+}
+
+        // Función para mostrar el modal de oferta
+        function showOfferModal() {
+            // Resetear el estado de oferta cerrada para que aparezca cada vez
+            // Solo verificamos si se cerró manualmente durante esta sesión
+            if (sessionStorage.getItem('offerManuallyClosed') === 'true') {
+                return;
+            }
+            
+            offerModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            
+            // Iniciar temporizador de 5 segundos
+            let seconds = 15;
+            offerTimer.textContent = seconds;
+            
+            offerCountdown = setInterval(() => {
+                seconds--;
+                offerTimer.textContent = seconds;
+                
+                if (seconds <= 0) {
+                    closeOfferModal();
+                }
+            }, 1000);
+            
+            // También un timeout de respaldo
+            offerTimeout = setTimeout(closeOfferModal, 15000);
+        }
+
+        // Función para cerrar el modal de oferta
+        function closeOfferModal() {
+            // Limpiar temporizadores
+            clearInterval(offerCountdown);
+            clearTimeout(offerTimeout);
+            
+            offerModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Función para cerrar manualmente el modal de oferta
+        function closeOfferModalManually() {
+            closeOfferModal();
+            // Guardar en sessionStorage que se cerró manualmente
+            sessionStorage.setItem('offerManuallyClosed', 'true');
+        }
+
+        // Configurar eventos para el modal de oferta
+        function setupOfferModal() {
+            // Cerrar modal al hacer clic en la X
+            offerCloseBtn.addEventListener('click', closeOfferModalManually);
+            
+            // Cerrar modal al hacer clic fuera
+            offerModal.addEventListener('click', function(e) {
+                if (e.target === offerModal) {
+                    closeOfferModalManually();
+                }
+            });
+            
+            // Cerrar con tecla ESC
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && offerModal.classList.contains('active')) {
+                    closeOfferModalManually();
+                }
+            });
+            
+            // Mostrar modal inmediatamente (aparece cada vez que se abre/actualiza)
+            setTimeout(showOfferModal, 10000);
+        }
+
         // Función para generar contenido de tabs dinámicamente
         function generateTabsContent() {
             // Limpiar contenedor
@@ -2236,34 +2766,6 @@ src="https://www.facebook.com/tr?id=761584890348008&ev=PageView&noscript=1"
             updateNavigationButtons();
         }
 
-
-        /* Actualizar qué tabs son visibles (solo 2)
-        function updateVisibleTabs() {
-            visibleTabs = [];
-            
-            // Si estamos en los primeros tabs
-            if (currentTab <= 2) {
-                visibleTabs = [1, 2];
-            } 
-            // Si estamos en los últimos tabs
-            else if (currentTab >= totalTabs - 1) {
-                visibleTabs = [totalTabs - 1, totalTabs];
-            }
-            // En el medio
-            else {
-                visibleTabs = [currentTab - 1, currentTab];
-            }
-            
-            // Asegurarse de que no mostremos tabs fuera de rango
-            visibleTabs = visibleTabs.filter(tab => tab >= 1 && tab <= totalTabs);
-            
-            // Si solo hay 1 tab, mostrarlo solo
-            if (totalTabs === 1) {
-                visibleTabs = [1];
-            }
-        }
-            */
-
         // Actualizar qué tabs son visibles (ahora siempre 4)
         function updateVisibleTabs() {
             visibleTabs = [];
@@ -2276,7 +2778,6 @@ src="https://www.facebook.com/tr?id=761584890348008&ev=PageView&noscript=1"
                 visibleTabs.push(i);
             }
         }
-
 
         // Navegar entre tabs
         function navigateTabs(direction) {
@@ -2309,10 +2810,8 @@ src="https://www.facebook.com/tr?id=761584890348008&ev=PageView&noscript=1"
             // DESPLAZAR AL PRINCIPIO DE LA PÁGINA
             window.scrollTo({
                 top: 0,
-                behavior: 'smooth' // Desplazamiento suave
+                behavior: 'smooth'
             });
-
-
 
             // Actualizar navegación inferior
             updateVisibleTabs();
@@ -2413,96 +2912,154 @@ src="https://www.facebook.com/tr?id=761584890348008&ev=PageView&noscript=1"
         }
 
         // Actualizar modal del carrito - DISEÑO MEJORADO
-        function updateCartModal() {
-            modalCartItems.innerHTML = '';
+// Actualizar modal del carrito - DISEÑO MEJORADO
+function updateCartModal() {
+    modalCartItems.innerHTML = '';
+    
+    // Calcular cantidad total de productos
+    const totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0);
 
-            if (cart.length === 0) {
-                modalCartItems.innerHTML = `
-                    <div style="text-align: center; padding: 40px; color: #888;">
-                        <i class="fas fa-shopping-basket" style="font-size: 3rem; margin-bottom: 20px; color: #ddd;"></i>
-                        <p style="font-size: 1.2rem;">Tu carrito está vacío</p>
-                        <p style="font-size: 0.9rem; margin-top: 10px;">Agrega productos para verlos aquí</p>
-                    </div>
-                `;
-                modalSendOrderBtn.disabled = true;
-                cartTotalSimple.style.display = 'none';
-                return;
-            }
+    if (cart.length === 0) {
+        modalCartItems.innerHTML = `
+            <div style="text-align: center; padding: 40px; color: #888;">
+                <i class="fas fa-shopping-basket" style="font-size: 3rem; margin-bottom: 20px; color: #ddd;"></i>
+                <p style="font-size: 1.2rem;">Tu carrito está vacío</p>
+                <p style="font-size: 0.9rem; margin-top: 10px;">Agrega productos para verlos aquí</p>
+            </div>
+        `;
+        modalSendOrderBtn.disabled = true;
+        cartTotalSimple.style.display = 'none';
+        return;
+    }
 
-            let total = 0;
+    // Calcular el total con descuentos
+    const total = calculateCartTotal();
+    
+    // Calcular subtotal sin descuentos
+    const totalWithoutDiscount = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+    
+    // Calcular monto de descuento
+    const discountAmount = totalWithoutDiscount - total;
 
-            cart.forEach(item => {
-                total += item.price * item.quantity;
+    // Agrupar productos para mostrar en el carrito
+    const productGroups = {};
+    
+    cart.forEach(item => {
+        const key = `${item.productId}-${item.size || 'sin-talla'}-${item.color ? item.color.code : 'sin-color'}`;
+        
+        if (!productGroups[key]) {
+            productGroups[key] = {
+                ...item,
+                quantity: 0
+            };
+        }
+        
+        productGroups[key].quantity += item.quantity;
+    });
 
-                const itemElement = document.createElement('div');
-                itemElement.className = 'selected-item';
-                itemElement.style.cssText = `
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    padding: 12px 15px;
-                    border-bottom: 1px solid #eee;
-                    background: #f8f9fa;
-                    border-radius: 8px;
-                    margin-bottom: 8px;
-                    flex-wrap: wrap;
-                    gap: 8px;
-                `;
+    // Mostrar productos agrupados
+    Object.values(productGroups).forEach(item => {
+        const itemElement = document.createElement('div');
+        itemElement.className = 'selected-item';
+        itemElement.style.cssText = `
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+            gap: 8px;
+        `;
 
-                let detailsHTML = '';
-                if (item.size) {
-                    detailsHTML += `<span style="margin-right: 12px; font-size: 0.85rem;">Talla: <strong>${item.size}</strong></span>`;
-                }
-                if (item.color) {
-                    detailsHTML += `<span class="item-color" style="display: inline-flex; align-items: center; gap: 5px; font-size: 0.85rem;">
-                        <span>Color:</span>
-                        <span class="item-color-swatch" style="width: 14px; height: 14px; border-radius: 50%; display: inline-block; background-color: ${item.color.value}; ${item.color.value === '#ffffff' ? 'border: 1px solid #ddd' : ''}"></span>
-                        <span><strong>${item.color.name}</strong></span>
-                    </span>`;
-                }
-
-                itemElement.innerHTML = `
-                    <div style="flex: 1; display: flex; align-items: center; gap: 12px; min-width: 200px;">
-                        <div style="width: 60px; height: 60px; border-radius: 6px; overflow: hidden; flex-shrink: 0; border: 1px solid #eee; background: white; display: flex; align-items: center; justify-content: center;">
-                            <img src="${item.image}" alt="${item.name}" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <div style="flex: 1;">
-                            <div style="font-weight: 600; margin-bottom: 5px; color: #333; font-size: 1rem;">${item.name}</div>
-                            <div style="font-size: 0.85rem; color: #666; display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 3px;">
-                                ${detailsHTML}
-                            </div>
-                            <div style="font-weight: 600; color: #4b6cb7; font-size: 1rem; margin-top: 3px;">
-                                $${(item.price * item.quantity).toFixed(2)}
-                            </div>
-                        </div>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 12px; flex-shrink: 0;">
-                        <div style="display: flex; align-items: center; gap: 8px; background: white; padding: 4px; border-radius: 6px; border: 1px solid #ddd; margin-right: 8px;">
-                            <button class="quantity-btn" onclick="updateCartItemQuantity(${item.id}, ${item.quantity - 1})" style="width: 28px; height: 28px; border-radius: 6px; background: #f0f0f0; border: none; display: flex; align-items: center; justify-content: center; cursor: pointer; font-weight: bold; color: #555; font-size: 1rem; transition: all 0.2s;">-</button>
-                            <span style="font-weight: 600; min-width: 25px; text-align: center; font-size: 1rem;">${item.quantity}</span>
-                            <button class="quantity-btn" onclick="updateCartItemQuantity(${item.id}, ${item.quantity + 1})" style="width: 28px; height: 28px; border-radius: 6px; background: #f0f0f0; border: none; display: flex; align-items: center; justify-content: center; cursor: pointer; font-weight: bold; color: #555; font-size: 1rem; transition: all 0.2s;">+</button>
-                        </div>
-                        <button onclick="removeFromCart(${item.id})" style="background: transparent; border: none; color: #dc3545; cursor: pointer; font-size: 1.1rem; padding: 6px; transition: all 0.2s; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                            <i class="fas fa-times"></i>
-                        </button>
-                    </div>
-                `;
-
-                modalCartItems.appendChild(itemElement);
-            });
-
-            // Mostrar el total de la compra simple al final
-            cartTotalAmount.textContent = `$${total.toFixed(2)}`;
-            cartTotalSimple.style.display = 'block';
-
-            // Agregar total en un mensaje oculto para el pedido de WhatsApp
-            modalSendOrderBtn.dataset.total = total.toFixed(2);
-            modalSendOrderBtn.disabled = false;
-
-            // Asegurar que el botón siempre sea visible
-            modalSendOrderBtn.style.display = 'flex';
+        let detailsHTML = '';
+        if (item.size) {
+            detailsHTML += `<span style="margin-right: 12px; font-size: 0.85rem;">Talla: <strong>${item.size}</strong></span>`;
+        }
+        if (item.color) {
+            detailsHTML += `<span class="item-color" style="display: inline-flex; align-items: center; gap: 5px; font-size: 0.85rem;">
+                <span>Color:</span>
+                <span class="item-color-swatch" style="width: 14px; height: 14px; border-radius: 50%; display: inline-block; background-color: ${item.color.value}; ${item.color.value === '#ffffff' ? 'border: 1px solid #ddd' : ''}"></span>
+                <span><strong>${item.color.name}</strong></span>
+            </span>`;
         }
 
+        // Para mostrar en el carrito
+        const groupTotal = item.price * item.quantity;
+
+        itemElement.innerHTML = `
+            <div style="flex: 1; display: flex; align-items: center; gap: 12px; min-width: 200px;">
+                <div style="width: 60px; height: 60px; border-radius: 6px; overflow: hidden; flex-shrink: 0; border: 1px solid #eee; background: white; display: flex; align-items: center; justify-content: center;">
+                    <img src="${item.image}" alt="${item.name}" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div style="flex: 1;">
+                    <div style="font-weight: 600; margin-bottom: 5px; color: #333; font-size: 1rem;">${item.name}</div>
+                    <div style="font-size: 0.85rem; color: #666; display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 3px;">
+                        ${detailsHTML}
+                    </div>
+                    <div style="font-size: 0.85rem; color: #666; margin-bottom: 3px;">
+                        Cantidad: <strong>${item.quantity}</strong>
+                        <span style="margin-left: 10px; color: #888;">
+                            ($${item.price.toFixed(2)} c/u)
+                        </span>
+                    </div>
+                    <div style="font-weight: 600; color: #4b6cb7; font-size: 1rem; margin-top: 3px;">
+                        $${groupTotal.toFixed(2)}
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 12px; flex-shrink: 0;">
+                <div style="display: flex; align-items: center; gap: 8px; background: white; padding: 4px; border-radius: 6px; border: 1px solid #ddd; margin-right: 8px;">
+                    <button class="quantity-btn" onclick="updateCartItemQuantity(${item.id}, ${item.quantity - 1})" style="width: 28px; height: 28px; border-radius: 6px; background: #f0f0f0; border: none; display: flex; align-items: center; justify-content: center; cursor: pointer; font-weight: bold; color: #555; font-size: 1rem; transition: all 0.2s;">-</button>
+                    <span style="font-weight: 600; min-width: 25px; text-align: center; font-size: 1rem;">${item.quantity}</span>
+                    <button class="quantity-btn" onclick="updateCartItemQuantity(${item.id}, ${item.quantity + 1})" style="width: 28px; height: 28px; border-radius: 6px; background: #f0f0f0; border: none; display: flex; align-items: center; justify-content: center; cursor: pointer; font-weight: bold; color: #555; font-size: 1rem; transition: all 0.2s;">+</button>
+                </div>
+                <button onclick="removeFromCart(${item.id})" style="background: transparent; border: none; color: #dc3545; cursor: pointer; font-size: 1.1rem; padding: 6px; transition: all 0.2s; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        `;
+
+        modalCartItems.appendChild(itemElement);
+    });
+
+    // Mostrar el desglose de precios detallado
+    cartTotalSimple.innerHTML = `
+        <div class="total-simple-row" style="margin-bottom: 10px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
+            <div class="total-simple-label">Subtotal:</div>
+            <div class="total-simple-amount" style="font-size: 1.3rem; color: #333;">$${totalWithoutDiscount.toFixed(2)}</div>
+        </div>
+        
+        <div class="total-simple-row" style="margin-bottom: 10px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
+            <div class="total-simple-label">
+                <span style="color: #28a745;">
+                    <i class="fas fa-tag"></i> Descuento ${totalQuantity > 1 ? `(${Math.floor(totalQuantity / 2)} unidad${Math.floor(totalQuantity / 2) > 1 ? 'es' : ''} al 50%)` : ''}:
+                </span>
+            </div>
+            <div class="total-simple-amount" style="font-size: 1.3rem; color: #28a745; font-weight: bold;">
+                -$${discountAmount.toFixed(2)}
+            </div>
+        </div>
+        
+        <div class="total-simple-row" style="margin-top: 10px; padding-top: 10px; border-top: 2px solid #4b6cb7;">
+            <div class="total-simple-label" style="font-size: 1.2rem;">Total a pagar:</div>
+            <div class="total-simple-amount" id="cartTotalAmount" style="font-size: 1.8rem; color: #182848;">$${total.toFixed(2)}</div>
+        </div>
+    `;
+    
+    cartTotalSimple.style.display = 'block';
+
+    // Agregar total en un mensaje oculto para el pedido de WhatsApp
+    modalSendOrderBtn.dataset.total = total.toFixed(2);
+    modalSendOrderBtn.disabled = false;
+
+    // Asegurar que el botón siempre sea visible
+    modalSendOrderBtn.style.display = 'flex';
+}        
+        
+        
         // Función para manejar el zoom de imágenes
         function setupImageZoom() {
             document.addEventListener('click', function (e) {
@@ -2777,9 +3334,14 @@ src="https://www.facebook.com/tr?id=761584890348008&ev=PageView&noscript=1"
                             ${sizeOptionsHTML}
                         </div>
                         
-                        <button class="add-to-cart-btn" onclick="addToCart(${product.id})">
-                            <i class="fas fa-cart-plus"></i> Agregar al Carrito
-                        </button>
+                        <div class="product-buttons-container">
+                            <button class="add-to-cart-btn" onclick="addToCart(${product.id})">
+                                <i class="fas fa-cart-plus"></i> Agregar al Carrito
+                            </button>
+                            <button class="buy-now-btn" onclick="buyNow(${product.id})">
+                                <i class="fas fa-bolt"></i> Comprar Ahora
+                            </button>
+                        </div>
                     </div>
                 `;
 
@@ -2919,6 +3481,51 @@ src="https://www.facebook.com/tr?id=761584890348008&ev=PageView&noscript=1"
             showNotification(`"${product.name}" agregado al carrito`);
         }
 
+        // Función para comprar ahora (agrega al carrito y abre el modal)
+        function buyNow(productId) {
+            closeImageZoom();
+            
+            const product = products.find((p) => p.id === productId);
+            if (!product) return;
+            
+            const selectedColor = product.hasColors ? getSelectedColor(productId) : null;
+            const currentImage = getProductImage(
+                product,
+                selectedColor ? selectedColor.code : null
+            );
+            
+            if (product.hasSizes) {
+                const selectedSize = getSelectedSize(productId);
+                if (!selectedSize) {
+                    showNotification(`Por favor, selecciona una talla para ${product.name}`);
+                    return;
+                }
+            }
+            
+            const selectedSize = product.hasSizes ? getSelectedSize(productId) : null;
+            
+            const cartItem = {
+                id: cartItemId++,
+                productId: product.id,
+                name: product.name,
+                price: product.price,
+                image: currentImage,
+                quantity: 1,
+                color: selectedColor,
+                size: selectedSize,
+            };
+            
+            // Agregar al carrito
+            cart.push(cartItem);
+            updateCartDisplay();
+            
+            // Abrir el modal del carrito
+            openCartModal();
+            
+            // Mostrar notificación
+            showNotification(`"${product.name}" agregado al carrito - Listo para comprar`);
+        }
+
         // Eliminar item del carrito
         function removeFromCart(itemId) {
             cart = cart.filter((item) => item.id !== itemId);
@@ -2961,62 +3568,107 @@ src="https://www.facebook.com/tr?id=761584890348008&ev=PageView&noscript=1"
         }
 
         // Enviar pedido por WhatsApp
-        function sendOrder() {
-            closeImageZoom();
-            closeCartModal();
+// Enviar pedido por WhatsApp
+function sendOrder() {
+    closeImageZoom();
+    closeCartModal();
 
-            if (cart.length === 0) {
-                showNotification("Por favor, agrega al menos un producto al carrito para enviar el pedido.");
-                return;
-            }
+    if (cart.length === 0) {
+        showNotification("Por favor, agrega al menos un producto al carrito para enviar el pedido.");
+        return;
+    }
 
-            let message = `¡Hola! Quiero realizar el siguiente pedido:%0A%0A`;
-            message += `*📦 PEDIDO DE PARA ELLA ONLINE*%0A%0A`;
+    let message = `¡Hola! Quiero realizar el siguiente pedido:%0A%0A`;
+    message += `*📦 PEDIDO DE PARA ELLA ONLINE*%0A%0A`;
 
-            let total = 0;
-            const productSummary = {};
-
-            cart.forEach((item) => {
-                const key = `${item.name}-${item.size || "sin-talla"}-${item.color ? item.color.code : "sin-color"}`;
-
-                if (!productSummary[key]) {
-                    productSummary[key] = {
-                        name: item.name,
-                        size: item.size,
-                        color: item.color,
-                        quantity: 0,
-                        price: item.price,
-                        total: 0,
-                    };
-                }
-
-                productSummary[key].quantity += item.quantity;
-                productSummary[key].total += item.price * item.quantity;
-            });
-
-            Object.values(productSummary).forEach((item) => {
-                total += item.total;
-                message += `• ${item.name}%0A`;
-
-                if (item.size) {
-                    message += `  Talla: ${item.size}%0A`;
-                }
-
-                if (item.color) {
-                    message += `  Color: ${item.color.name}%0A`;
-                }
-
-                message += `  Cantidad: ${item.quantity}%0A`;
-                message += `  Precio unitario: $${item.price.toFixed(2)}%0A`;
-                message += `  Subtotal: $${item.total.toFixed(2)}%0A%0A`;
-            });
-
-            message += `*TOTAL A PAGAR: $${total.toFixed(2)}*%0A%0A`;
-            message += `¡Gracias! Por favor, confírmame la disponibilidad y el tiempo de entrega.`;
-
-            const phoneNumber = "593987259001";
-            window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
+    let total = calculateCartTotal();
+    const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+    const totalWithoutDiscount = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+    const discountAmount = totalWithoutDiscount - total;
+    
+    // Agrupar productos para mostrar en el mensaje
+    const productGroups = {};
+    
+    cart.forEach(item => {
+        const key = `${item.name}-${item.size || "sin-talla"}-${item.color ? item.color.code : "sin-color"}`;
+        
+        if (!productGroups[key]) {
+            productGroups[key] = {
+                name: item.name,
+                size: item.size,
+                color: item.color,
+                quantity: 0,
+                price: item.price,
+            };
         }
+        
+        productGroups[key].quantity += item.quantity;
+    });
+
+    // Mostrar cada producto
+    Object.values(productGroups).forEach((item) => {
+        message += `• ${item.name}%0A`;
+
+        if (item.size) {
+            message += `  Talla: ${item.size}%0A`;
+        }
+
+        if (item.color) {
+            message += `  Color: ${item.color.name}%0A`;
+        }
+
+        message += `  Cantidad: ${item.quantity}%0A`;
+        message += `  Precio unitario: $${item.price.toFixed(2)}%0A`;
+        const subtotal = item.price * item.quantity;
+        message += `  Subtotal: $${subtotal.toFixed(2)}%0A%0A`;
+    });
+
+    // Línea separadora
+    message += `────────────────────────%0A`;
+
+    // Mostrar desglose de precios
+    message += `*RESUMEN DE COMPRA:*%0A`;
+    message += `Subtotal: $${totalWithoutDiscount.toFixed(2)}%0A`;
+    
+    // Solo mostrar descuento si hay más de 1 producto
+    if (totalItems > 1) {
+        const discountedUnits = Math.floor(totalItems / 2);
+        message += `Descuento (${discountedUnits} unidad${discountedUnits > 1 ? 'es' : ''} al 50%): -$${discountAmount.toFixed(2)}%0A`;
+    } else {
+        message += `Descuento: $0.00%0A`;
+    }
+    
+    message += `*TOTAL A PAGAR: $${total.toFixed(2)}*%0A%0A`;
+
+    // Agregar información de la oferta
+    if (totalItems > 1) {
+        message += `*💎 OFERTA APLICADA:*%0A`;
+        message += `• 2 pares: 2do par al 50% descuento%0A`;
+        message += `• 3 pares: 2 completos + 1 al 50% descuento%0A`;
+        message += `• 4 pares: 2 completos + 2 al 50% descuento%0A%0A`;
+    }
+
+    // Información del cliente (puedes pedir estos datos si quieres)
+    message += `*📝 DATOS DE ENVÍO:*%0A`;
+    message += `(Por favor, confírmame los siguientes datos)%0A`;
+    message += `• Nombre completo:%0A`;
+    message += `• Cédula/Identificación:%0A`;
+    message += `• Teléfono:%0A`;
+    message += `• Dirección completa:%0A`;
+    message += `• Ciudad y Provincia:%0A`;
+    message += `• Referencia de domicilio:%0A%0A`;
+
+    message += `*📞 MÉTODO DE PAGO:*%0A`;
+    message += `Pago contra entrega (pagas al recibir)%0A%0A`;
+
+    message += `*🚚 ENVÍO:*%0A`;
+    message += `Envío gratis a todo el país%0A%0A`;
+
+    message += `¡Gracias! Por favor, confírmame la disponibilidad y el tiempo estimado de entrega.`;
+
+    const phoneNumber = "593987259001";
+    window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
+}
 
         // Mostrar notificación
         function showNotification(message) {
@@ -3072,11 +3724,15 @@ src="https://www.facebook.com/tr?id=761584890348008&ev=PageView&noscript=1"
 
         // Inicializar la página
         document.addEventListener("DOMContentLoaded", function () {
+            // Resetear el estado de oferta cerrada manualmente
+            sessionStorage.removeItem('offerManuallyClosed');
+            
             generateTabsContent();
             generateBottomTabs();
             loadProducts();
             setupImageZoom();
             setupFloatingCart();
+            setupOfferModal();
             updateCartDisplay();
         });
     </script>
