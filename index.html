@@ -3642,30 +3642,30 @@ function sendOrder() {
     message += `*TOTAL A PAGAR: $${total.toFixed(2)}*%0A%0A`;
 
     // Agregar información de la oferta
-    if (totalItems > 1) {
+    /*if (totalItems > 1) {
         message += `*💎 OFERTA APLICADA:*%0A`;
         message += `• 2 pares: 2do par al 50% descuento%0A`;
         message += `• 3 pares: 2 completos + 1 al 50% descuento%0A`;
         message += `• 4 pares: 2 completos + 2 al 50% descuento%0A%0A`;
-    }
+    }*/
 
     // Información del cliente (puedes pedir estos datos si quieres)
-    message += `*📝 DATOS DE ENVÍO:*%0A`;
+    /*message += `*📝 DATOS DE ENVÍO:*%0A`;
     message += `(Por favor, confírmame los siguientes datos)%0A`;
     message += `• Nombre completo:%0A`;
     message += `• Cédula/Identificación:%0A`;
     message += `• Teléfono:%0A`;
     message += `• Dirección completa:%0A`;
     message += `• Ciudad y Provincia:%0A`;
-    message += `• Referencia de domicilio:%0A%0A`;
+    message += `• Referencia de domicilio:%0A%0A`;*/
 
-    message += `*📞 MÉTODO DE PAGO:*%0A`;
-    message += `Pago contra entrega (pagas al recibir)%0A%0A`;
+    message += `*💵 PAGAS AL RECIBIR*%0A`;
+    /*message += `Pago contra entrega (pagas al recibir)%0A%0A`;*/
 
-    message += `*🚚 ENVÍO:*%0A`;
-    message += `Envío gratis a todo el país%0A%0A`;
+    message += `*🚚 ENVÍO GRATIS*%0A`;
+    /*message += `Envío gratis a todo el país%0A%0A`;*/
 
-    message += `¡Gracias! Por favor, confírmame la disponibilidad y el tiempo estimado de entrega.`;
+    message += `¡Gracias! Por favor, confírmame el tiempo estimado de entrega.`;
 
     const phoneNumber = "593987259001";
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
